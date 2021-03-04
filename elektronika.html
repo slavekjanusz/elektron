@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Katedra elektroniki</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="css/mystyles.css" rel="stylesheet">
+    <link href="css/bootstrap-social.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+	<header>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">
+                        <span class="glyphicon glyphicon-home" aria-hidden="true"></span> Strona główna</a></li>
+                    <li><a href="#"><span class="glyphicon  glyphicon-info-sign" aria-hidden="true"></span> O nas</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                         <span class="glyphicon glyphicon-education" aria-hidden="true"></span> Nauka <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="elektronika.html">Elektrotechnika i elektronika</a></li>
+                            <li><a href="#">Informatyka</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">
+                        <i class="fa fa-envelope-o"></i> Kontakt</a>
+                     </li>
+                </ul>
+                <form class="navbar-form navbar-right">
+                    <div class="form-group">
+                        <input type="text" placeholder="Adres e-mail" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" placeholder="Hasło" class="form-control">
+                    </div>
+                    <button type="submit" class="btn btn-success">Zaloguj się</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+</header>
+    
+        
+
+<main>
+  <div class="jumbotron">
+    <div class="container">
+      <h1 class="display-3">Elektrotechnika</h1>
+
+<h3>Czym jest GNU Octave?</h3>
+<p>GNU Octave jest środowiskiem programistycznym pozwalającym na
+tworzenie własnych algorytmów analizy i przetwarzania
+sygnałów. Oprogramowanie może być również wykorzystane do obliczeń
+matematycznych i wizualizacji danych. 
+</p>
+
+    <!--p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p -->
+    </div>
+  </div>
+
+  <div class="container">
+    <!-- Example row of columns -->
+    <div class="row">
+      <div class="col-md-4">
+          <h2 id="inst">GNU Octave - Instalacja</h2>
+
+
+<p><strong>Uwaga: </strong>Niniejsza instrukcja odnosi się do wersji 3.2.2 programu GNU
+Octave dla systemów Microsoft Windows, dostępnej na stronie:
+<a href="https://sourceforge.net/projects/octave/files/Octave%20Windows%20binaries/Octave%203.2.2%20for%20Windows%20MinGW32%20installer/Octave-3.2.2_i686-pc-mingw32_gcc-4.3.0_setup.exe/download">
+https://sourceforge.net/projects/octave/</a> 
+</p>
+
+<p> Nowsze wersje programu GNU
+Octave lub wersje kompatybilne z innymi systemami operacyjnymi
+można pobrać i zainstalować zgodnie ze wskazówkami znajdującymi się
+na stronie programu: 
+	<a href="http://www.gnu.org/software/octave/">http://www.gnu.org/software/octave/</a>
+</p>
+
+<h4>Czynności wstępne</h4>
+<p>Pobierz plik instalacyjny, a następnie uruchom go klikając dwukrotnie na jego ikonie.</p>
+
+<p><img src="img/octave/octave01.png" class="img-responsive" alt="octave01"/></p>
+<p>Zostanie uruchomiony kreator instalacji programu GNU Octave. Postępuj zgodnie z
+jego wskazówkami.</p>
+
+<p><img src="img/octave/octave02.png" class="img-responsive" alt="octave02"/></p>
+
+<p>Najpierw zaakceptuj umowę licencyjną.</p>
+
+<p><img src="img/octave/octave03.png" class="img-responsive" alt="octave03"/></p>
+
+<p>Następnie wybierz folder, w którym program będzie
+zainstalowany. <br>Zaleca się użycie domyślnego folderu,
+proponowanego przez instalator:</p>
+<pre>C:\Octave\3.2.2_gcc-4.3.0.</pre>
+
+
+<p>W przypadku instalacji w folderze innym niż domyślny 
+unikaj folderów z nazwami zawierającymi spację. 
+<br>Na przykład, <strong>nie należy</strong> instalować programu
+w folderze <em>Program Files</em>. </p>
+
+<p><img src="img/octave/octave04.png" class="img-responsive" alt="octave04"/></p>
+
+<p>W kolejnym kroku kreator prosi użytkownika o wybór składników
+instalacji. <br>Wybór składników biblioteki ATLAS jest dokonywany
+automatycznie przez kreatora instalacji i powinien być zmieniony
+wyłącznie w przypadku, gdy kreator błędnie zidentyfikował rodzaj
+procesora komputera. <br>W przykładowej instalacji kreator
+automatycznie wybrał składnik SSE3 (Core2Duo).</p>
+
+<p><img src="img/octave/octave05.png" class="img-responsive" alt="octave05"/></p>
+
+<p>W tym samym oknie kreatora dodatkowo zaznacz składnik
+<em>Octave Forge</em>. Spowoduje to zainstalowanie zestawu dodatkowych
+pakietów obliczeniowych, między innymi pakietu do przetwarzania
+sygnałów.</p>
+
+<p><img src="img/octave/octave06.png" class="img-responsive" alt="octave06"/></p>
+
+<p>Kolejne okno kreatora dotyczy wskazania miejsc, w których
+kreator utworzy skróty programu GNU Octave. Zaleca się
+zaakceptowanie domyślnych ustawień pozostawiając wszystkie wpisy
+bez zmian. </p>
+<p>Następnie klinij przycisk 
+<kbd class="my-kbd">Install</kbd>, co spowoduje rozpoczęcie procesu instalacji.</p>
+
+<p><img src="img/octave/octave07.png" class="img-responsive" alt="octave07"/></p>
+<p>
+W zależności od wydajności komputera proces instalacji może zająć od kilku do kilkunastu minut.
+</p>
+
+<p><img src="img/octave/octave08.png" class="img-responsive" alt="octave08"/></p>
+
+<p> Na zakończenie instalacji zostanie wyświetlone poniższe okno informacyjne.</p>
+
+
+<p><img src="img/octave/octave09.png" class="img-responsive" alt="octave09"/></p>
+<p> Po naciśnięciu przycisku <kbd class="my-kbd">Finish</kbd> wyświetli się okno z dodatkowymi informacjami na temat 
+zainstalowanego programu i jego składników.</p>
+
+<p><img src="img/octave/octave10.png"  class="img-responsive" alt="octave10"/></p>
+
+<p>Przy poprawnej instalacji instalator utworzy
+na pulpicie skrót do programu GNU Octave.
+</p>
+
+<p><img src="img/octave/octave11.png" class="img-responsive" alt="octave11"/></p>
+
+<p>W celu sprawdzenia poprawności instalacji uruchom
+program, dwukrotnie klikając myszką na wspomniany wyżej skrót.
+<br>Na ekranie komputera powinna się pojawić tzw. konsola
+programu, zwana również wierszem poleceń.</p>
+
+<p><img src="img/octave/octave12.png" class="img-responsive" alt="octave12"/></p>
+
+<p>Gratulacje! Program GNU Octave został zainstalowany.</p>
+<br>
+
+<p><strong>Przejdź do:</strong></p>
+
+<p>
+<a href="#test">Konfiguracja i testowanie programu GNU Octave</a>
+</p>
+
+<p>
+<a href="#sinus">Przykłady programów przedstawających przebieg sinusoidalny
+utworzonych w środowisku GNU Octave</a>
+</p>
+
+</div><!-- end div#content --> 
+     
+	<div class="col-md-4">
+      	<h2 id="test">GNU Octave - Konfiguracja i testowanie</h2>
+            <p>Po uruchomieniu programu GNU Octave na ekranie komputera pojawi 
+            się konsola (wiersz poleceń).</p>
+		<p><img src="img/octave/octave12b.png" class="img-responsive" alt="konsola"/></p>
+
+		<p>W celu przetestowania działania programu w oknie wiersza poleceń
+		programu Octave po znaku zachęty &gt; wpisz polecenie 3 + 4 i naciśnij klawisz
+		<kbd class="my-kbd">Enter</kbd>. </p>
+        <p>Wynik działania powyższej operacji umieszczony zostanie w zmiennej 
+        <em>ans</em> (ang. <em> answer - odpowiedź </em>).
+        </p>
+
+<pre>
+&gt;  3 + 4
+ans = 7
+</pre>
+
+
+
+<p>Dużą pomocą przy używaniu konsoli jest możliwość skorzystania ze
+strzałek na klawiaturze <kbd class="my-kbd">&uarr;</kbd> lub  <kbd class="my-kbd">&darr;</kbd>, które pozwalają przywoływać poprzednio
+wykonane polecenia lub przemieszać się pomiędzy nimi.
+
+<p>Aby zakończyć pracę programu GNU Octave w jego konsoli wpisz polecenie:
+<pre>&gt;  quit</pre>
+<p>lub wciśnij kombinację klawiszy <kbd class="my-kbd">Ctrl</kbd> + <kbd class="my-kbd"> D</kbd>.</p>
+
+<br>
+<h4>Własny skrypt (program) w Octave</h4>
+
+<p>Octave to również język programowania, 
+w którym możesz pisać skrypty (programy), a następnie wywoływać je z poziomu wiersza poleceń.</p>
+<p>Skrypty Octave to pliki tekstowe o rozszerzeniu .m, zawierające w kolejnych liniach komendy Octave.<br>
+Octave wykonuje wszystkie polecenia zawarte w pliku po kolei. 
+Jest więc interpreterem - nie ma etapu kompilacji kodu przed jego wykonaniem.</p>
+<p>
+Skrypt (program) uruchamiamy wpisując w wierszu poleceń jego nazwę bez rozszerzenia.
+</p>
+<pre>&gt;  nazwa_skryptu</pre>
+
+
+<p>Nowo utworzone skrypty (programy) użytkownika należy zapisywać w
+przeznaczonym do tego celu folderze, zwanym w niniejszej instrukcji
+folderem roboczym, który należy utworzyć na dysku lokalnym
+komputera.</p>
+<p> Przykładowo, folder roboczy o nazwie <em>Programy</em>
+można utworzyć jako podkatalog folderu <em>Octave</em>:</p>
+<pre>C:\Octave\Programy</pre>
+
+
+<p>W systemie Octave należy dodać ścieżkę dostępu do folderu
+roboczego tak, aby system 'wiedział', gdzie znajdują się pliki ze
+skryptami (programami) użytkownika.</p>
+<p> W celu dodania i zapamiętania ścieżki dostępu do katalogu roboczego, w wierszu
+poleceń należy kolejno wprowadzić dwa następujące polecenia:</p>
+<pre>&gt;  addpath('C:\Octave\Programy')</pre>
+<p>oraz</p>
+<pre>&gt;  savepath</pre>
+
+<p>Poprawność zapisania ścieżki można
+sprawdzić wpisując w wierszu poleceń komendę:</p>
+<pre>&gt;  path</pre>
+<p>co spowoduje wyświetlenie następujących informacji:</p>
+
+<p><img src="img/octave/octave13.png" class="img-responsive" alt="octave13"/></p>
+
+<h4>Edycja kodu źródłowego</h4>
+
+<p>Do programu GNU Octave 3.2.2 dołączony jest edytor kodu źródłowego Notepad++.
+W celu uruchomienia tego edytora, w wierszu poleceń należy wpisać komendę:</p>
+<pre>&gt;  edit</pre>
+<p>i nacisnąć klawisz <kbd class="my-kbd">Enter</kbd>. Następnie w edytorze tekstu można napisać prosty skrypt (program), 
+np. 2 + 3, jak zilustrowano poniżej.</p>
+
+<p><img src="img/octave/octave14.png" class="img-responsive" alt="prosty program"/></p>
+
+<p>W następnym kroku należy zapisać nowo utworzony skrypt (program) do folderu roboczego </p>
+<pre>C:\Octave\Programy</pre>
+
+<p>Uwaga! Podczas zapisywania skryptu (programu) należy na końcu jego nazwy
+dodać jako rozszerzenie pliku literę m (dopisać kropkę oraz literę m). </p>
+<p>Tak więc powyższy skrypt (program) należy zapisać pod nazwą</p>
+<pre>pierwszyprogram.m</pre>
+
+
+<p><img src="img/octave/octave15.png"  class="img-responsive" alt="octave15"/></p>
+
+<p>Aby uruchomić wcześniej utworzony skrypt (program), w wierszu poleceń należy
+wpisać jego nazwę, tym razem pomijając rozszerzenie pliku. </p> 
+<pre>&gt;  pierwszyprogram</pre>
+<p> i nacisnąć klawisz <kbd class="my-kbd">Enter</kbd>. </p>
+<p>Przy prawidłowym zapisaniu pliku i skonfigurowaniu ścieżek
+dostępu program Octave wyświetli wynik działania programu tak, jak poniżej.</p>
+<pre>
+&gt;  pierwszyprogram
+ans = 5
+</pre>
+
+
+<p>W przeciwnym wypadku zostaną wyświetlone komunikaty o błędach. </p>
+ <p>
+W takiej sytuacji należy sprawdzić pisownię nazwy skryptu (programu) i
+jego rozszerzenia, po czym korzystając z polecenia </p>
+<pre>&gt;  path</pre>
+<p>należy sprawdzić poprawność ustawienia ścieżki dostępu do katalogu
+roboczego użytkownika.</p>
+
+<br>
+<p><strong>Przejdź do:</strong></p>
+<p><a href="#inst">Instalacja programu GNU Octave</a></p>
+<p><a href="#sinus">Przykłady skryptów (programów) przedstawających przebiegi sinusoidalne utworzonych w środowisku GNU Octave</a></p>
+
+
+      </div><!-- end div#content -->  
+
+          <div class="col-md-4">
+              <h2 id="sinus">GNU Octave - Rysowanie przebiegu sinusoidalnego</h2>
+
+<p>W celu utworzenia wykresu funkcji sin(x) w danym przedziale np.  [-2&pi;, 2&pi;] definiujemy tablicę, 
+w której przechowywane będą liczby z tego przedziału.<br>
+</p>
+
+<p>Przykładowo polecenie:</p>
+
+<pre>&gt;  x = -2*pi : 0.1 : 2*pi;</pre>
+
+<p>wypełni tablicę <var>x</var> liczbami od -2π do 2π z krokiem 0.1.</p>
+
+<p>Natomiast komenda:</p>
+<pre>&gt;  y = sin(x);</pre>
+
+<p>zapisze w tablicy <var>y</var> wartości funkcji sinus obliczone 
+dla każdej wartości z tablicy <var>x</var>.
+</p>
+
+<p>Kolejne odpowiadające sobie liczby obu tablic <var>x</var> i <var>y</var> 
+<br>(pary liczb) posłużą do utworzenia wykresu.
+</p>
+
+<p>Wykres funkcji rysujemy za pomocą komendy:</p>
+
+<pre>&gt;  plot(x, y);</pre>
+<p><img src="img/octave/sinus2p.png"  class="img-responsive"  alt="sinus2p"/></p>
+
+<br>
+<h4>Wykres przebiegu sinusoidalnego</h4>
+
+<p>Poniżej przedstawiono przykłady skryptów (programów) rysujących przebieg sinusoidalny.<br>  
+Fragmenty kodu po znaku # to komentarze.
+Nie wpływają one na działanie wykonywanych poleceń. Tekst od 
+znaku # do końca linii jest ignorowany.</p>
+
+
+
+<pre>
+clear all; clf;			# czyszczenie danych i okna wykresu
+f = 50;				# czestotliwosc przebiegu [Hz]
+w = 2 * pi * f;			# pulsacja przebiegu  [rad/s] 
+A = 10;				# amplituda przebiegu [V]
+fpn = pi/2;			# faza poczatkowa przebiegu [rad]
+czasPocz = 0;			# czas poczatkowy przebiegu [s]
+czasKonc = 0.1;			# czas koncowy przebiegu [s]
+k = 0.00001;			# odstep miedzy kolejnymi wartosciami czasu [s]
+t = czasPocz : k : czasKonc; 	# ciag liczb odpowiadajacych wartosciom czasu
+y = A * sin(w * t + fpn); 	# przebieg sinusoidalny [V]
+plot(t, y);			# rysowanie wykresu przebiegu 
+xlabel("Czas [s]");		# opis osi poziomej
+ylabel("Amplituda [V]");	# opis osi pionowej
+title("Przebieg sinusoidalny")	# tytul wykresu
+grid on				# wlaczenie wyswietlania siatki
+</pre>
+
+
+<p><img src="img/octave/sinus01.jpg"  class="img-responsive"  alt="sinus01"/></p>
+
+<br>
+<h4>Wykresy dwóch przebiegów sinusoidalnych na jednym rysunku</h4>
+
+
+<pre>
+clear all; clf;			# czyszczenie danych i okna wykresu
+f = 50;				# czestotliwosc przebiegów [Hz]
+w = 2 * pi * f;			# pulsacja przebiegow  [rad/s] 
+Um = 10; 			# amplituda napiecia [V] 
+Im = 7;				# amplituda pradu [A] 
+fpn = pi/2;			# faza poczatkowa napiecia [rad]
+fpp = -pi/6;			# faza poczatkowa pradu [rad]
+czasPocz = 0;			# czas poczatkowy przebiegu [s]
+czasKonc = 0.1;         	# czas koncowy przebiegu [s]
+k = 0.00001;			# odstep miedzy kolejnymi wartosciami czasu [s]
+t = czasPocz : k : czasKonc;    # ciag liczb odpowiadajacych wartosciom czasu [s]
+u = Um * sin(w * t + fpn); 	# przebieg napiecia sinusoidalnego [V]	     	 
+plot(t, u, "r");   		# rysowanie przebiegu napiecia (r - kolor czerwony)
+hold on;			# wlaczenie trybu dorysowania do biezacego wykresu
+i = Im * sin(w * t + fpp); 	# przebieg pradu sinusoidalnego [A]
+plot(t, i, "g");		# rysowanie przebiegu pradu (g - kolor zielony)
+xlabel("Czas [s]");		# opis osi poziomej
+ylabel("Amplituda");		# opis osi pionowej
+grid on				# wlaczenie wyswietlenia siatki na wykresie
+title('Jan Kowalski - Praca nr 2 - Rysowanie przebiegow sinusoidalnych')
+</pre>
+
+
+<p><img src="img/octave/sinus02.jpg" class="img-responsive" alt="sinus02"/></p>
+
+
+<br>
+<h4 id="dwa">Dwa wykresy w jednym oknie graficznym</h4>
+
+
+<pre>
+clear all; clf;			# czyszczenie danych i okna wykresu
+f = 50;				# czestotliwosc przebiegów [Hz]
+w = 2 * pi * f;			# pulsacja przebiegow  [rad/s] 
+Um = 80 * sqrt(2); 		# amplituda napiecia [V] 
+Im = 1.12;			# amplituda pradu [A] 
+fpn = (-45 / 180) * pi;		# faza poczatkowa napiecia [rad]
+fpp = (-56.5 / 180) * pi;	# faza poczatkowa pradu [rad]
+czasPocz = 0;			# czas poczatkowy przebiegu [s]
+czasKonc = 0.1;         	# czas koncowy przebiegu [s]
+k = 0.00001;			# odstep miedzy kolejnymi wartosciami czasu [s]
+t = czasPocz : k : czasKonc;    # ciag liczb odpowiadajacych wartosciom czasu [s]
+u = Um * sin(w * t + fpn); 	# przebieg napiecia sinusoidalnego [V]	     	 
+i = Im * sin(w * t + fpp); 	# przebieg pradu sinusoidalnego [A]
+
+subplot(2,1,1);
+plot(t, u, "r");	    	# rysowanie przebiegu napiecia (r - kolor czerwony)
+title('Jan Kowalski - Praca nr 3 - Zadanie nr 5')	# tytul rysunku
+ylabel("Napiecie [V]");		# opis osi pionowej
+grid on				# wlaczenie wyswietlenia siatki na wykresie
+
+subplot(2,1,2);
+plot(t, i, "g");		# rysowanie przebiegu pradu (g - kolor zielony)
+ylabel("Prad [A]");		# opis osi pionowej
+xlabel("Czas [s]");		# opis osi poziomej
+grid on				# wlaczenie wyswietlenia siatki na wykresie
+
+</pre>
+
+
+<p><img src="img/dwa_wykresy.jpg" class="img-responsive" alt="dwa wykresy"/></p>
+
+<br>
+<p><strong>Przejdź do:</strong></p>
+<p><a href="#inst">Instalacja programu GNU Octave</a></p>
+<p><a href="#test">Konfiguracja i testowanie programu GNU Octave</a></p>
+
+</div><!-- end div#content -->  
+
+<hr>
+
+ </div> <!-- /container -->
+</div>
+</main>
+      <footer class="row-footer">
+          <div class="container">
+            <div class="row">
+                <div class="col-xs-5 col-xs-offset-1 col-sm-2 col-sm-offset-1">
+                    <h5>Linki</h5>
+                    <ul class="list-unstyled">
+                        <li><span class="glyphicon glyphicon-home" aria-hidden="true"></span><a href="#"> Strona główna</a></li>
+                        <li><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span><a href="#"> O nas</a></li>
+                        <li><span class="glyphicon glyphicon-education" aria-hidden="true"></span><a href="#"> Nauka</a></li>
+                        <li><span class="fa fa-envelope-o" aria-hidden="true"></span><a href="#"> Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-sm-5">
+                    <h5>Adres</h5>
+                    <address>
+                       ul. Sejneńska 33<br>
+                       16-400 Suwałki<br>
+                      <i class="fa fa-phone"></i>: +48 875653630<br>
+                      <i class="fa fa-fax"></i>: +48 875653630<br>
+                      <i class="fa fa-envelope"></i>:
+                          <a href="mailto:elektra@ezst.pl">elektra@ezst.pl</a>
+                      </address>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <div class="nav navbar-nav" style="padding: 40px 10px;">
+                        <a class="btn btn-social-icon btn-google-plus" href="http://google.com/+"><i class="fa fa-google-plus"></i></a>
+                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com"><i class="fa fa-facebook"></i></a>
+                        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com"><i class="fa fa-linkedin"></i></a>
+                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com"><i class="fa fa-twitter"></i></a>
+                        <a class="btn btn-social-icon btn-youtube" href="http://youtube.com"><i class="fa fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-xs-12">
+                    <p style="padding:10px;"></p>
+                    <p class="text-center">&copy; 2016 JoT</p>
+                </div>
+            </div>
+      </div>
+    </footer>
+    <script src="js/angular.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>  

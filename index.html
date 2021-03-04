@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Katedra elektroniki</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="css/mystyles.css" rel="stylesheet">
+    <link href="css/bootstrap-social.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<header>	
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                
+            </div>
+
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">
+                        <span class="glyphicon glyphicon-home" aria-hidden="true"></span> Strona główna</a></li>
+                    <li><a href="#"><span class="glyphicon  glyphicon-info-sign" aria-hidden="true"></span> O nas</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                           <span class="glyphicon glyphicon-education" aria-hidden="true"></span> Nauka <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="elektronika.html">Elektrotechnika i elektronika</a></li>
+                            <li><a href="#">Informatyka</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">
+                        <i class="fa fa-envelope-o"></i> Kontakt</a>
+                     </li>
+                </ul>
+                <form class="navbar-form navbar-right">
+                    <div class="form-group">
+                        <input type="text" placeholder="Adres e-mail" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="password" placeholder="Hasło" class="form-control">
+                    </div>
+                    <button type="submit" class="btn btn-success">Zaloguj się</button>
+                </form>
+            </div>
+
+        </div>
+    </nav>
+</header>
+    
+
+
+<div class="container">
+
+    <!-- Carousel -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+        <li data-target="#myCarousel" data-slide-to="4"></li>
+      </ol>
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner"> <!--role="listbox" -->
+        
+        <div class="item active">
+          <img src="img/01.jpg" alt="first slide">
+        </div>
+        
+        <div class="item">
+          <img src="img/02.jpg" alt="second slide">
+        </div>
+        
+        <div class="item">
+          <img src="img/03.jpg" alt="third slide">
+        </div>
+        
+        <div class="item">
+          <img src="img/04.jpg" alt="fourth slide">
+        </div>
+
+        <div class="item">
+          <img src="img/05.jpg" alt="fifth slide">
+        </div>
+      </div>
+
+        <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      </a>
+    </div><!-- /Carousel -->
+
+</div>
+
+
+<div class="container">
+			<h2>Wielkości charakteryzujące przebiegi sinusoidalne</h2>
+			<!-- Tabs -->
+			<ul class="nav nav-tabs" role="tablist">
+			    <li class="active"><a href="#tabs-first" role="tab" data-toggle="tab">Praca nr 1</a></li>
+			    <li><a href="#tabs-second" role="tab" data-toggle="tab">Praca nr 2</a></li>
+			    <li><a href="#tabs-third" role="tab" data-toggle="tab">Praca nr 3</a></li>
+			    <li><a href="#tabs-fourth" role="tab" data-toggle="tab">Praca nr 4</a></li>
+			</ul>
+
+			<!-- Tab Content -->
+			<div class="tab-content">
+
+			    <div class="active tab-pane fade in" id="tabs-first">
+			      <h4>Zadanie 1.</h4>
+			      	<div>
+			      	<p>Poniżej podane są równania opisujące przebiegi napięcia i prądu w pewnym odbiorniku:</p>
+<pre>
+u(t) = 12 &#8901; sin(314 &#8901; t + &#960;/4) V 
+i(t) = 8 &#8901; sin(314 &#8901; t - &#960;/9) A
+</pre>
+<p>Wyznacz:</p>
+<ol type="a">
+	<li>amplitudę napięcia U<sub>m</sub></li>
+	<li>amplitudę prądu I<sub>m</sub></li>
+	<li>wartość skuteczną napięcia U</li>
+	<li>wartość skuteczną prądu I</li>
+	<li>pulsację przebiegów &omega;</li> 
+	<li>częstotliwość przebiegów f</li>
+	<li>okres przebiegów T</li>
+	<li>fazę początkową napięcia &psi;<sub>u</sub></li>
+	<li>fazę początkową prądu &psi;<sub>i</sub></li>
+	<li>przesunięcie fazowe między napięciem a prądem &#966;</li>
+	<li>wartość napięcia po czasie t = 120 &micro;s</li>  
+	<li>wartość prądu po czasie t = 50 &micro;s </li>
+</ol>
+
+	<h4>Zadanie 2.</h4>
+	<p>Przy użyciu programu Octave wykreślić na wspólnym rysunku przebiegi napięcia i prądu dla zakresu od 0 do 0.1 s.<br>
+	Wskazówki dotyczące wykonania znajdziesz na stronie: <a href="http://ezst.pl/elektronika.html">Wykres przebiegu sinusoidalnego.</a>
+
+	</p>
+
+	<p>
+	  Praca powinna być wydrukowana na papierze formatu A4 i zawierać:
+	</p>
+	<ol>
+	    <li>stronę tytułową (uzupełnioną twoimi danymi) w układzie przedstawionym na poniższej ilustracji</li>
+		<li>równania opisujące przebiegi napięcia i prądu</li>
+		<li>obliczenia i odpowiedzi na pkt. <em>a</em> - <em>l</em></li>
+		<li>wykresy przebiegów napięcia i prądu na wspólnym rysunku</li>
+	</ol>
+	<p><img src="img/praca1strony.png" class="img-responsive" alt="strona  tytulowa"></p>
+	<br>
+	</div>
+
+	</div>
+
+	<div class="tab-pane fade" id="tabs-second">
+      	<h4>Zadanie 3.</h4>
+      	<div>
+      	<p>Poniżej podane są równania opisujące przebiegi napięcia i prądu w pewnym odbiorniku:</p>
+<pre>
+u(t) = 12 &#8901; sin(314 &#8901; t + &#960;/4) V 
+i(t) = 8 &#8901; sin(314 &#8901; t - &#960;/9) A
+</pre>
+
+<p>Wyznacz:</p>
+<ol type="a">
+	<li>amplitudę napięcia U<sub>m</sub></li>
+	<li>amplitudę prądu I<sub>m</sub></li>
+	<li>wartość skuteczną napięcia U</li>
+	<li>wartość skuteczną prądu I</li>
+	<li>pulsację &omega;</li> 
+	<li>częstotliwość przebiegów f</li>
+	<li>okres przebiegów T</li>
+	<li>fazę początkową napięcia &psi;<sub>u</sub></li>
+	<li>fazę początkową prądu &psi;<sub>i</sub></li>
+	<li>przesunięcie fazowe między napięciem a prądem &#966;</li>
+	<li>wartość napięcia po czasie t = 120 &micro;s</li>  
+	<li>wartość prądu po czasie t = 50 &micro;s </li>
+</ol>
+
+					<h4>Zadanie 4.</h4>
+	<p>Przy użyciu programu Octave wykreślić na wspólnym rysunku przebiegi napięcia i prądu dla zakresu od 0 do 0.1 s.<br>
+	Wskazówki dotyczące wykonania znajdziesz na stronie: <a href="http://ezst.pl/elektronika.html#wykres">Wykres przebiegu sinusoidalnego.</a>
+	</p>
+	<p>
+	  Praca powinna być wydrukowana na papierze formatu A4 i zawierać:
+	</p>
+	<ol>
+	    <li>stronę tytułową (uzupełnioną twoimi danymi) w układzie przedstawionym na poniższej ilustracji</li>
+		<li>równania opisujące przebiegi napięcia i prądu</li>
+		<li>kod źródłowy programu</li>
+		<li>wykresy przebiegów napięcia i prądu na wspólnym rysunku</li>
+	</ol>
+	<p><img src="img/praca2strony.png" class="img-responsive" alt="strona  tytulowa"></p>
+		<p>
+			Wszystkie etapy pracy należy wykonać samodzielnie. Nie należy udostępniać jej innym uczniom. Dostarczenie identycznej lub prawie identycznej pracy będzie skutkowało jej niezaliczeniem.
+		</p>
+		<br>
+    	</div>
+    </div>
+
+    <div class="tab-pane fade" id="tabs-third">
+      				<h4>Zadanie 5.</h4>
+      				<div>
+      				<p>W pliku <a href="./dane.pdf" target="_blank">dane.pdf</a> znajdują się wartości: częstotliwości f, elementów R, L dwójnika szeregowego oraz przebieg czasowy występującego na nim napięcia u(t). Wyznacz metodą klasyczną przebieg czasowy prądu dwójnika i(t). </p>
+<p><img src="img/zad5.jpg" class="img-responsive" alt="zadanie 5"></p>
+
+<p>Sposób wykonania:</p>
+<ol type="a">
+	<li>wyznacz wartość skuteczną napięcia U</li>
+	<li>wyznacz fazę początkową napięcia &psi;<sub>u</sub></li>
+	<li>oblicz pulsację przebiegu  &omega;</li>
+	<li>oblicz reaktancję cewki X<sub>L</sub></li>
+	<li>oblicz impedancję dwójnika Z</li> 
+	<li>oblicz kąt fazowy impedancji dwójnika &#966;</li>
+	<li>oblicz wartość skuteczną prądu I</li>
+	<li>oblicz fazę początkową prądu &psi;<sub>i</sub></li>
+	<li>oblicz amplitudę prądu I<sub>m</sub></li>
+	<li>podaj wzór określający przebieg czasowy prądu i(t)</li>  
+</ol>
+	<p>Przy użyciu programu Octave wykreśl przebiegi napięcia i prądu dla zakresu od 0 do 0.1 s.<br>
+	Wskazówki dotyczące wykonania dwóch wykresów w jednym oknie graficznym znajdziesz na stronie:<br> <a href="http://ezst.pl/elektronika.html#dwa">Dwa wykresy w jednym oknie</a>.
+	</p>
+
+<h4>Zadanie 6.</h4>
+<p>W pliku <a href="./dane.pdf" target="_blank">dane.pdf</a> znajdują się wartości: częstotliwości f, elementów R, C  dwójnika równoległego  oraz przebieg czasowy występującego na nim napięcia u(t). Wyznacz metodą klasyczną przebieg czasowy prądu dwójnika i(t).</p>
+<p><img src="img/zad6.jpg" class="img-responsive" alt="zadanie 5"></p>
+
+<p>Sposób wykonania:</p>
+<ol type="a">
+	<li>wyznacz wartość skuteczną napięcia U</li>
+	<li>wyznacz fazę początkową napięcia &psi;<sub>u</sub></li>
+	<li>oblicz pulsację przebiegu &omega;</li>
+	<li>oblicz konduktancję rezystora G</li>
+	<li>oblicz susceptancję kondensatora B<sub>C</sub></li>
+	<li>oblicz admitancję dwójnika Y</li> 
+	<li>oblicz kąt fazowy admitancji dwójnika &#966;</li>
+	<li>oblicz wartość skuteczną prądu I</li>
+	<li>oblicz fazę początkową prądu &psi;<sub>i</sub></li>
+	<li>oblicz amplitudę prądu I<sub>m</sub></li>
+	<li>podaj wzór określający przebieg czasowy prądu i(t)</li>  
+</ol>
+	<p>Przy użyciu programu Octave wykreśl przebiegi napięcia i prądu dla zakresu od 0 do 0.1 s.<br>
+	Wskazówki dotyczące wykonania dwóch wykresów w jednym oknie graficznym znajdziesz na stronie:<br><a href="http://ezst.pl/elektronika.html#dwa">Dwa wykresy w jednym oknie</a>.
+	</p>
+  
+  <p>W trakcie wykonywania zadań pomocne będą wzory do zamiany stopni na radiany (i odwrotnie).
+  </p>
+  <pre>
+  kąt_w_stopniach = kąt_w_radianach * 180 / &pi;
+  kąt_w_radianach = kąt_w_stopniach * &pi; / 180</pre>
+
+	<p>
+	  Praca powinna być wydrukowana na papierze formatu A4 i zawierać:
+	</p>
+	<ol>
+	  <li>stronę tytułową (uzupełnioną twoimi danymi) w układzie przedstawionym na poniższej ilustracji</li>
+		<li>równania opisujące przebieg napięcia</li>
+		<li>wartości elementów R, L, C</li>
+		<li>rozwiązania zadań</li>
+		<li>kody źródłowe programów</li>
+		<li>wykresy przebiegów napięcia i prądu w jednym oknie graficznym</li>
+	</ol>
+	<p><img src="img/praca3.jpg" class="img-responsive" alt="strony pracy nr 3"></p>
+		<p>
+			Wszystkie etapy pracy należy wykonać samodzielnie. Nie należy udostępniać jej innym uczniom. Dostarczenie identycznej lub prawie identycznej pracy będzie skutkowało jej niezaliczeniem.
+		</p>
+		<br>
+		</div>    
+					    
+    </div>
+
+
+    <div class="tab-pane fade" id="tabs-fourth">
+    	<h4>Zadanie 7.</h4>
+    	<div>
+    		<p>W pliku <a href="./dane.pdf" target="_blank">dane.pdf</a> znajdują się wartości: częstotliwości f, elementów R, L dwójnika szeregowego oraz przebieg czasowy występującego na nim napięcia u(t). Wyznacz metodą symboliczną przebieg czasowy prądu dwójnika i(t). </p>
+<p><img src="img/zad5.jpg" class="img-responsive" alt="zadanie 5"></p>
+
+<p>Sposób wykonania:</p>
+<ol type="a">
+	<li>wyznacz postać wykładniczą wartości skutecznej zespolonej napięcia <u>U</u></li>
+	<ul type="square">
+	   <li>wyznacz wartość skuteczną napięcia U</li>
+	   <li>wyznacz fazę początkową napięcia &psi;<sub>u</sub></li>
+	   <li>zapisz napięcie zespolone w postaci wykładniczej <u>U</u> = U&sdot;e<sup>j&psi;<sub>u</sub></sup></li>
+	</ul>
+	<li>oblicz pulsację przebiegu  &omega;</li>
+	<li>oblicz reaktancję cewki X<sub>L</sub></li>
+	<li>wyznacz postać wykładniczą impedancji zespolonej dwójnika <u>Z</u>:</li>
+	<ul type="square">
+	   <li>oblicz moduł impedancji zespolonej dwójnika Z</li> 
+	   <li>oblicz kąt fazowy impedancji zespolonej dwójnika &#966;</li>
+	   <li>zapisz impedancję zespoloną w postaci wykładniczej <u>Z</u> = Z&sdot;e<sup>j&phi;</sup></li>
+	</ul>
+	<li>wyznacz postać wykładniczą wartości skutecznej zespolonej prądu <u>I</u></li>
+	<li>wyznacz wartość skuteczną prądu I</li>
+	<li>wyznacz amplitudę prądu I<sub>m</sub></li>
+	<li>wyznacz fazę początkową prądu &psi;<sub>i</sub></li>
+	<li>podaj wzór określający przebieg czasowy prądu dwójnika i(t)</li>  
+</ol>
+<br>
+	
+
+<h4>Zadanie 8.</h4>
+<p>W pliku <a href="./dane.pdf" target="_blank">dane.pdf</a> znajdują się wartości: częstotliwości f, elementów R, C  dwójnika równoległego  oraz przebieg czasowy występującego na nim napięcia u(t). Wyznacz metodą symboliczną przebieg czasowy prądu dwójnika i(t).</p>
+<p><img src="img/zad6.jpg" class="img-responsive" alt="zadanie 5"></p>
+
+<p>Sposób wykonania:</p>
+<ol type="a">
+	<li>wyznacz postać wykładniczą wartości skutecznej zespolonej napięcia <u>U</u></li>
+	<ul type="square">
+	   <li>wyznacz wartość skuteczną napięcia U</li>
+	   <li>wyznacz fazę początkową napięcia &psi;<sub>u</sub></li>
+	   <li>zapisz napięcie zespolone w postaci wykładniczej <u>U</u> = U&sdot;e<sup>j&psi;<sub>u</sub></sup></li>
+	</ul>
+	<li>oblicz konduktancję rezystora G</li>
+	<li>oblicz pulsację przebiegu &omega;</li>
+	<li>oblicz susceptancję kondensatora B<sub>C</sub></li>
+	<li>wyznacz postać wykładniczą admitancji zespolonej dwójnika <u>Y</u>:</li> 
+	<ul type="square">
+	   <li>oblicz moduł admitancji zespolonej dwójnika Y</li> 
+	   <li>oblicz kąt fazowy admitancji zespolonej dwójnika &#966;</li>
+	   <li>zapisz admitancję zespoloną w postaci wykładniczej <u>Y</u> = Y&sdot;e<sup>-j&phi;</sup></li>
+	</ul>
+	<li>korzystając z prawa Ohma, wyznacz postać wykładniczą wartości skutecznej zespolonej prądu <u>I</u></li>
+	<li>wyznacz wartość skuteczną prądu I</li>
+	<li>wyznacz amplitudę prądu I<sub>m</sub></li>
+	<li>wyznacz fazę początkową prądu &psi;<sub>i</sub></li>
+	<li>podaj wzór określający przebieg czasowy prądu dwójnika i(t)</li>    
+</ol>
+<br>
+
+	<p>
+	  Praca powinna być wydrukowana na papierze formatu A4 i zawierać:
+	</p>
+	<ol>
+	  <li>stronę tytułową (uzupełnioną twoimi danymi) w układzie przedstawionym na poniższej ilustracji</li>
+		<li>równania opisujące przebieg napięcia</li>
+		<li>wartości elementów R, L, C</li>
+		<li>rozwiązania zadań</li>
+	</ol>
+	  <p><img src="img/praca4.jpg" class="img-responsive" alt="strony pracy nr 4"></p>
+	  <p>
+		Wszystkie etapy pracy należy wykonać samodzielnie. Nie należy udostępniać jej innym uczniom. Dostarczenie identycznej lub prawie identycznej pracy będzie skutkowało jej niezaliczeniem.
+	  </p>
+	  <br>
+	  </div>    
+	</div>
+
+
+</div>
+
+
+</div>
+    
+      <footer class="row-footer">
+          <div class="container">
+            <div class="row">
+                <div class="col-xs-5 col-xs-offset-1 col-sm-2 col-sm-offset-1">
+                    <h5>Linki</h5>
+                    <ul class="list-unstyled">
+                        <li><span class="glyphicon glyphicon-home" aria-hidden="true"></span><a href="#"> Strona główna</a></li>
+                        <li><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span><a href="#"> O nas</a></li>
+                        <li><span class="glyphicon glyphicon-education" aria-hidden="true"></span><a href="#"> Nauka</a></li>
+                        <li><span class="fa fa-envelope-o" aria-hidden="true"></span><a href="#"> Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-sm-5">
+                    <h5>Adres</h5>
+                    <address>
+                       ul. Sejneńska 33<br>
+                       16-400 Suwałki<br>
+                      <i class="fa fa-phone"></i>: +48 875653630<br>
+                      <i class="fa fa-fax"></i>: +48 875653630<br>
+                      <i class="fa fa-envelope"></i>:
+                          <a href="mailto:elektra@ezst.pl">elektra@ezst.pl</a>
+                      </address>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <div class="nav navbar-nav" style="padding: 40px 10px;">
+                        <a class="btn btn-social-icon btn-google-plus" href="http://google.com/+"><i class="fa fa-google-plus"></i></a>
+                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com"><i class="fa fa-facebook"></i></a>
+                        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com"><i class="fa fa-linkedin"></i></a>
+                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com"><i class="fa fa-twitter"></i></a>
+                        <a class="btn btn-social-icon btn-youtube" href="http://youtube.com"><i class="fa fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-xs-12">
+                    <p class="text-center">&copy; 2016 JoT</p>
+                </div>
+            </div>
+      </div>
+    </footer>
+    <script src="js/angular.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>  
