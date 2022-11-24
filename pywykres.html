@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Katedra elektroniki</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="css/mystyles.css" rel="stylesheet">
+    <link href="css/bootstrap-social.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+	<header>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">
+                        <span class="glyphicon glyphicon-home" aria-hidden="true"></span> Strona główna</a></li>
+                    <li><a href="#"><span class="glyphicon  glyphicon-info-sign" aria-hidden="true"></span> O nas</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                         <span class="glyphicon glyphicon-education" aria-hidden="true"></span> Nauka <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="elektronika.html">Elektrotechnika i elektronika</a></li>
+                            <li><a href="pywykres.html">Informatyka</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">
+                        <i class="fa fa-envelope-o"></i> Kontakt</a>
+                     </li>
+                </ul>
+                <form class="navbar-form navbar-right">
+                    <div class="form-group">
+                        <input type="text" placeholder="Adres e-mail" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" placeholder="Hasło" class="form-control">
+                    </div>
+                    <button type="submit" class="btn btn-success">Zaloguj się</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+</header>
+    
+        
+
+<main>
+  <div class="jumbotron">
+    <div class="container">
+      <h1 class="display-3">Informatyka</h1>
+
+</p>
+
+    <!--p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p -->
+    </div>
+  </div>
+
+  <div class="container">
+    <!-- Example row of columns -->
+    <div class="row">
+      <div class="col-md-4">
+
+
+
+      </div><!-- end div#content -->  
+
+          <div class="col-md-12">
+              <h2 id="pysinus">Python plus Matplotlib i NumPy - rysowanie przebiegu sinusoidalnego</h2>
+
+
+<h4>Wykresy dwóch przebiegów sinusoidalnych na jednym rysunku</h4>
+
+
+<pre>
+import matplotlib.pyplot as plt
+import numpy as np
+
+f = 50                                  # czestotliwosc przebiegów [Hz]
+w = 2 * np.pi * f                       # pulsacja przebiegow  [rad/s] 
+Um = 10                                 # amplituda napiecia [V] 
+Im = 7                                  # amplituda pradu [A] 
+fpn = np.pi/2                           # faza poczatkowa napiecia [rad]
+fpp = -np.pi/6                          # faza poczatkowa pradu [rad]
+czasPocz = 0                            # czas poczatkowy przebiegu [s]
+czasKonc = 0.1                          # czas koncowy przebiegu [s]
+k = 0.00001                             # odstep miedzy kolejnymi wartosciami czasu [s]
+t = np.arange(czasPocz, czasKonc, k)    # ciag liczb odpowiadajacych wartosciom czasu [s]
+u = Um * np.sin(w * t + fpn)            # przebieg napiecia sinusoidalnego [V]
+i = Im * np.sin(w * t + fpp)            # przebieg pradu sinusoidalnego [A]
+
+fig, ax = plt.subplots()
+
+plt.plot(t, u, color="r")               # rysowanie przebiegu napiecia 
+plt.plot(t, i, color="g")               # rysowanie przebiegu prądu
+plt.xlabel('Czas [s]')                  # opis osi poziomej 
+plt.ylabel('Amplituda')                 # opis osi poziomej 
+plt.grid(True)                          # wlaczenie wyswietlenia siatki na wykresie
+
+fig.savefig("przebiegi.png")
+plt.title('Jan Kowalski - Praca nr 2 - Rysowanie przebiegow sinusoidalnych\n')
+plt.show()
+
+</pre>
+
+
+<p><img src="img/python/sinus02p.jpg" class="img-responsive" alt="sinus02p"/></p>
+
+
+
+
+</div><!-- end div#content -->  
+
+<hr>
+
+ </div> <!-- /container -->
+</div>
+</main>
+      <footer class="row-footer">
+          <div class="container">
+            <div class="row">
+                <div class="col-xs-5 col-xs-offset-1 col-sm-2 col-sm-offset-1">
+                    <h5>Linki</h5>
+                    <ul class="list-unstyled">
+                        <li><span class="glyphicon glyphicon-home" aria-hidden="true"></span><a href="#"> Strona główna</a></li>
+                        <li><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span><a href="#"> O nas</a></li>
+                        <li><span class="glyphicon glyphicon-education" aria-hidden="true"></span><a href="#"> Nauka</a></li>
+                        <li><span class="fa fa-envelope-o" aria-hidden="true"></span><a href="#"> Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-sm-5">
+                    <h5>Adres</h5>
+                    <address>
+                       ul. Sportowa 99<br>
+                       26-900 Nowe Miasto<br>
+                      <i class="fa fa-phone"></i>: +48 123456789<br>
+                      <i class="fa fa-fax"></i>: +48 123456789<br>
+                      <i class="fa fa-envelope"></i>:
+                          <a href="mailto:elektron@ezst.pl">elektron@jot.pl</a>
+                      </address>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <div class="nav navbar-nav" style="padding: 40px 10px;">
+                        <a class="btn btn-social-icon btn-google-plus" href="http://google.com/+"><i class="fa fa-google-plus"></i></a>
+                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com"><i class="fa fa-facebook"></i></a>
+                        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com"><i class="fa fa-linkedin"></i></a>
+                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com"><i class="fa fa-twitter"></i></a>
+                        <a class="btn btn-social-icon btn-youtube" href="http://youtube.com"><i class="fa fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-xs-12">
+                    <p style="padding:10px;"></p>
+                    <p class="text-center">&copy; 2016 JoT</p>
+                </div>
+            </div>
+      </div>
+    </footer>
+    <script src="js/angular.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>  
