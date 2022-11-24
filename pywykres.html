@@ -85,9 +85,42 @@
 
           <div class="col-md-12">
               <h2 id="pysinus">Python plus Matplotlib i NumPy - rysowanie przebiegu sinusoidalnego</h2>
+<br>
+
+<h3>Wykres przebiegu sinusoidalnego</h3>
 
 
-<h4>Wykresy dwóch przebiegów sinusoidalnych na jednym rysunku</h4>
+<pre>
+import matplotlib.pyplot as plt
+import numpy as np
+
+f = 50                                  # czestotliwosc przebiegów [Hz]
+w = 2 * np.pi * f                       # pulsacja przebiegow  [rad/s] 
+A = 10                                  # amplituda przebiegu [V] 
+fpn = np.pi/2                           # faza poczatkowa przebiegu [rad]
+czasPocz = 0                            # czas poczatkowy przebiegu [s]
+czasKonc = 0.1                          # czas koncowy przebiegu [s]
+k = 0.00001                             # odstep miedzy kolejnymi wartosciami czasu [s]
+t = np.arange(czasPocz, czasKonc, k)    # ciag liczb odpowiadajacych wartosciom czasu [s]
+y = A * np.sin(w * t + fpn)             # przebieg sinusoidalny [V]
+
+plt.plot(t, y, color="r")               # rysowanie przebiegu napiecia 
+
+plt.xlabel('Czas [s]')                  # opis osi poziomej 
+plt.ylabel('Amplituda')                 # opis osi pionowej 
+plt.grid(True)                          # wlaczenie wyswietlenia siatki na wykresie
+
+plt.title('Przebieg sinusoidalny\n')
+plt.show()
+
+</pre>
+<br>
+
+<p><img src="img/python/sinus01p.jpg" class="img-responsive" alt="sinus01p"/></p>
+
+<br>
+
+<h3>Wykresy dwóch przebiegów sinusoidalnych na jednym rysunku</h3>
 
 
 <pre>
@@ -107,25 +140,60 @@ t = np.arange(czasPocz, czasKonc, k)    # ciag liczb odpowiadajacych wartosciom 
 u = Um * np.sin(w * t + fpn)            # przebieg napiecia sinusoidalnego [V]
 i = Im * np.sin(w * t + fpp)            # przebieg pradu sinusoidalnego [A]
 
-fig, ax = plt.subplots()
-
 plt.plot(t, u, color="r")               # rysowanie przebiegu napiecia 
 plt.plot(t, i, color="g")               # rysowanie przebiegu prądu
 plt.xlabel('Czas [s]')                  # opis osi poziomej 
-plt.ylabel('Amplituda')                 # opis osi poziomej 
+plt.ylabel('Amplituda')                 # opis osi pionowej 
 plt.grid(True)                          # wlaczenie wyswietlenia siatki na wykresie
 
-fig.savefig("przebiegi.png")
 plt.title('Jan Kowalski - Praca nr 2 - Rysowanie przebiegow sinusoidalnych\n')
 plt.show()
 
 </pre>
 
-
+<br>
 <p><img src="img/python/sinus02p.jpg" class="img-responsive" alt="sinus02p"/></p>
 
+<br>
+
+<h3>Dwa wykresy w jednym oknie graficznym</h3>
 
 
+<pre>
+import matplotlib.pyplot as plt
+import numpy as np
+
+f = 50                                  # czestotliwosc przebiegów [Hz]
+w = 2 * np.pi * f                       # pulsacja przebiegow  [rad/s] 
+Um = 10                                 # amplituda napiecia [V] 
+Im = 7                                  # amplituda pradu [A] 
+fpn = np.pi/2                           # faza poczatkowa napiecia [rad]
+fpp = -np.pi/6                          # faza poczatkowa pradu [rad]
+czasPocz = 0                            # czas poczatkowy przebiegu [s]
+czasKonc = 0.1                          # czas koncowy przebiegu [s]
+k = 0.00001                             # odstep miedzy kolejnymi wartosciami czasu [s]
+t = np.arange(czasPocz, czasKonc, k)    # ciag liczb odpowiadajacych wartosciom czasu [s]
+u = Um * np.sin(w * t + fpn)            # przebieg napiecia sinusoidalnego [V]
+i = Im * np.sin(w * t + fpp)            # przebieg pradu sinusoidalnego [A]
+
+plt.subplot(2,1,1)
+plt.title('Jan Kowalski - Praca nr 2 - Rysowanie przebiegow sinusoidalnych\n')
+plt.plot(t, u, color="r")               # rysowanie przebiegu napiecia
+plt.ylabel('Amplituda napięcia')        # opis osi pionowej
+plt.grid(True)                          # wlaczenie wyswietlenia siatki na wykresie
+
+plt.subplot(2,1,2)
+plt.plot(t, i, color="g")               # rysowanie przebiegu prądu
+plt.xlabel('Czas [s]')                  # opis osi poziomej 
+plt.ylabel('Amplituda prądu')           # opis osi pionowej 
+plt.grid(True)                          # wlaczenie wyswietlenia siatki na wykresie
+
+plt.show()
+
+</pre>
+
+<br>
+<p><img src="img/python/sinus22p.jpg" class="img-responsive" alt="sinus22p"/></p>
 
 </div><!-- end div#content -->  
 
